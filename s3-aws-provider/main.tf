@@ -19,14 +19,14 @@ resource "stackit_objectstorage_bucket" "innfactory_example_bucket" {
 }
 
 
-resource "stackit_objectstorage_credentials_group" "default_credentials_group" {
+resource "stackit_objectstorage_credentials_group" "test_credentials_group" {
   project_id = var.project_id
-  name       = "default-credentials-group"
+  name       = "test-credentials-group"
 }
 
 resource "stackit_objectstorage_credential" "bucket_credentials" {
   project_id           = var.project_id
-  credentials_group_id = stackit_objectstorage_credentials_group.default_credentials_group.credentials_group_id
+  credentials_group_id = stackit_objectstorage_credentials_group.test_credentials_group.credentials_group_id
   expiration_timestamp = "2027-01-02T03:04:05Z"
 }
 
@@ -61,9 +61,21 @@ resource "aws_s3_bucket_policy" "allow_public_read_access" {
            "Effect":"Allow",
            "Principal":"*",
            "Action":"s3:GetObject",
-           "Resource":"urn:sgws:s3:::innfactory-example-bucket/*"
+           "Resource":"urn:sgws:s3:::innfactory-example-bucket/image.png"
            }
         ]
      }
      EOF
+}
+
+resource "aws_s3_bucket_cors_configuration" "set_cors" {
+  bucket = stackit_objectstorage_bucket.innfactory_example_bucket.name
+
+  cors_rule {
+    allowed_headers = ["*"]
+    allowed_methods = ["GET"]
+    allowed_origins = ["https://innfactory.de"]
+    expose_headers  = ["ETag"]
+    max_age_seconds = 3000
+  }
 }
