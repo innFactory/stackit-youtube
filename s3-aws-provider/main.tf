@@ -4,6 +4,10 @@ terraform {
       source  = "stackitcloud/stackit"
       version = "0.50.0"
     }
+    aws = {
+      source  = "hashicorp/aws"
+      version = "~> 5.0"
+    }
   }
 }
 
@@ -17,7 +21,6 @@ resource "stackit_objectstorage_bucket" "innfactory_example_bucket" {
   project_id = var.project_id
   name       = "innfactory-example-bucket"
 }
-
 
 resource "stackit_objectstorage_credentials_group" "test_credentials_group" {
   project_id = var.project_id
@@ -49,7 +52,6 @@ resource "aws_s3_object" "image" {
   content_type = "image/png"
   etag         = filemd5("./image.png")
 }
-
 
 resource "aws_s3_bucket_policy" "allow_public_read_access" {
   bucket = stackit_objectstorage_bucket.innfactory_example_bucket.name
