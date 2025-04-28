@@ -1,0 +1,9 @@
+---
+applications:
+  - name: myNextjsApp
+    memory: 1024M
+    disk_quota: 2024M
+    instances: 1
+    buildpacks:
+      - nodejs_buildpack
+    command: npm run start-cf
