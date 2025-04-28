@@ -4,10 +4,10 @@
 `brew install cloudfoundry/tap/cf-cli@8`
 
 
-# create nextjs app
+## create nextjs app
 `npx create-next-app@latest`
 
-# create manifest.yml in my-nextjs-app
+## create manifest.yml in my-nextjs-app
 ```
 ---
 applications:
@@ -20,13 +20,13 @@ applications:
     command: npm run start-cf
 ```
 
-# create .cfignore in my-nextjs-app
+## create .cfignore in my-nextjs-app
 ```
 node_modules
 .next
 ```
 
-# add node version to the package.json
+## add node version to the package.json
 ```
   "engines": {
     "node": "22",
@@ -34,10 +34,15 @@ node_modules
   }
 ```
 
-# Login cloud foundry cli
+## add script to package.json
+```
+"start-cf": "npm i && next build && next start",
+```
+
+## Login cloud foundry cli
 `cf login -a https://api.system.01.cf.eu01.stackit.cloud --sso`
 
-# Push app to cloud foundry
+## Push app to cloud foundry
 ```
 cd my-nextjs-app
 cf push
