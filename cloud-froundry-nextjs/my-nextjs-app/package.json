@@ -1,13 +1,13 @@
 {
   "name": "my-nextjs-app",
-  "version": "0.1.1",
+  "version": "0.1.0",
   "private": true,
   "scripts": {
     "dev": "next dev --turbopack",
     "build": "next build",
     "start": "next start",
-    "start-cf": "npm i && next build && next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "start-cf": "npm i && next build && next start"
   },
   "dependencies": {
     "react": "^19.0.0",
