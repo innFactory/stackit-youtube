@@ -1,0 +1,18 @@
+[project]
+name = "image-service"
+version = "0.1.0"
+description = ""
+authors = [
+    {name = "Anton Spöck",email = "a.spoeck@innfactory.de"}
+]
+requires-python = ">=3.12,<4.0"
+dependencies = [
+    "stackit-core (>=0.1.0,<0.2.0)",
+    "boto3 (>=1.38.13,<2.0.0)",
+    "stackit-objectstorage (>=1.0.3,<2.0.0)",
+    "flask (>=3.1.0,<4.0.0)"
+]
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"

@@ -1,0 +1,4 @@
+Flask
+stackit-core
+boto3
+stackit-objectstorage

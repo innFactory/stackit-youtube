@@ -1,0 +1,9 @@
+---
+applications:
+  - name: image-service
+    memory: 512M
+    disk_quota: 512M
+    instances: 1
+    buildpacks:
+      - python_buildpack
+    command: python image-service.py

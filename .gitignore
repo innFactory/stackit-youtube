@@ -5,3 +5,6 @@ sa.json
 terraform.tfstate
 terraform.tfstate.backup
 .vscode
+cspell.json
+bin
+site-packages
