@@ -7,6 +7,7 @@ from stackit.objectstorage.api.default_api import CreateCredentialsGroupPayload
 from stackit.objectstorage.api.default_api import CreateAccessKeyPayload
 from stackit.core.configuration import Configuration
 from flask import Flask
+
 import boto3
 
 PROJECT_ID = "ff94ba73-704a-4616-9a9d-6ac2f7d84592"
@@ -49,7 +50,7 @@ def main(coffee_id):
         key = client.create_access_key(
             PROJECT_ID,
             f"{REGION}",
-            CreateAccessKeyPayload(expires="2025-05-14T00:00:00.000Z"),
+            CreateAccessKeyPayload(expires="2025-05-16T00:00:00.000Z"),
             group.credentials_group_id,
         )
 
