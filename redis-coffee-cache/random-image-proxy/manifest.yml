@@ -1,0 +1,9 @@
+---
+applications:
+  - name: random-image-proxy
+    memory: 512M
+    disk_quota: 512M
+    instances: 1
+    buildpacks:
+      - nodejs_buildpack
+    command: npm i && npm i -g typescript && npm run build && npm start
