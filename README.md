@@ -1,4 +1,9 @@
 # Videos
+[STACKIT Partnerprofil](https://www.stackit.de/de/partner/partnersteckbrief-innfactory/) | [INNFACTORY](https://innfactory.de) | [INNFACTORY AI](https://innfactory.ai) <br>
+Profitieren Sie von unserer Expertise in der Implementierung modernster KI- und Cloud-Plattformen: innFactory und STACKIT bringen gemeinsam digitale Souveränität in Ihre Unternehmensstrategien – für eine zukunftsfähige, datensichere Transformation.
+
+---
+
 ## /redis-coffee-cache
 [![IMAGE ALT TEXT HERE](https://img.youtube.com/vi/gUNBYjnrdgE/0.jpg)](https://www.youtube.com/watch?v=gUNBYjnrdgE)
 
@@ -20,8 +25,6 @@
 ## /create-project
 [![IMAGE ALT TEXT HERE](https://img.youtube.com/vi/2W6JE8BVTBk/0.jpg)](https://www.youtube.com/watch?v=2W6JE8BVTBk)
 
-## More
-- https://innfactory.de
-- https://www.stackit.de/de/partner/partnersteckbrief-innfactory/
-- https://innfactory.de/souveraene-cloud/stackit/innfactory-schliet-partnerschaft-mit-stackit-um-die-datensouveranitat-in-der-cloud-fordern-zu-konnen/
-- https://innfactory.ai
+--- 
+
+[STACKIT Partnerprofil](https://www.stackit.de/de/partner/partnersteckbrief-innfactory/) | [INNFACTORY](https://innfactory.de) | [INNFACTORY AI](https://innfactory.ai) 
