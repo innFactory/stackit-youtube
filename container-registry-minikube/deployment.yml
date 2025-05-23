@@ -1,0 +1,29 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: "game2048-deployment"
+spec:
+  selector:
+    matchLabels:
+      app: "game2048"
+  replicas: 2
+  template:
+    metadata:
+      labels:
+        app: "game2048"
+    spec:
+      containers:
+        - image: registry.onstackit.cloud/test-tje2e/game2048:latest
+          name: "game2048"
+          ports:
+            - containerPort: 80
+              protocol: TCP
+          resources:
+            limits:
+              memory: 512Mi
+              cpu: "1"
+            requests:
+              memory: 256Mi
+              cpu: "0.2"
+      imagePullSecrets:
+          - name: stackit-container-reg-secret
