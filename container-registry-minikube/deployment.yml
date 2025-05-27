@@ -13,7 +13,7 @@ spec:
         app: "game2048"
     spec:
       containers:
-        - image: registry.onstackit.cloud/test-tje2e/game2048:latest
+        - image: registry.onstackit.cloud/test-wer45/game2048:1.0.0
           name: "game2048"
           ports:
             - containerPort: 80
@@ -26,4 +26,4 @@ spec:
               memory: 256Mi
               cpu: "0.2"
       imagePullSecrets:
-          - name: stackit-container-reg-secret
+        - name: stackit-container-reg-secret

@@ -5,11 +5,12 @@ docker build -t "game2048" ./game2048
 ```
 
 # push image
-replace tag 1a81dac65506 with your image-id
+replace tag b1f0ff0958d1 with your image-id
 ```
 docker images -a
-docker tag 1a81dac65506 registry.onstackit.cloud/test-tje2e/game2048:1.0.0
-docker push registry.onstackit.cloud/test-tje2e/game2048:1.0.0
+docker login registry.onstackit.cloud
+docker tag b1f0ff0958d1 registry.onstackit.cloud/test-wer45/game2048:1.0.0
+docker push registry.onstackit.cloud/test-wer45/game2048:1.0.0
 ```
 
 # install minikube
@@ -21,8 +22,7 @@ https://minikube.sigs.k8s.io/docs/start
 # kubernetes imagePullSecret
 IMPORTANT escape the $ -> robot$test-tje2e+test2 -> robot\$test-tje2e+test2
 ```
-kubectl create secret docker-registry stackit-container-reg-secret --docker-server=registry.onstackit.cloud --docker-username=robot\$test-tje2e+test2 --docker-password=GwrF77vgy1NGdyyMIvcntoAIRS62aQIy
-
+kubectl create secret docker-registry stackit-container-reg-secret --docker-server=registry.onstackit.cloud --docker-username=robot\$test-wer45+push-pull --docker-password=JaTH1Ap4tNe0xvlFU3HFNbIVrDjc8ldS
 ```
 
 # minikube deployment
