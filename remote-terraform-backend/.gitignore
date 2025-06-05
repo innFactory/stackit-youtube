@@ -1,0 +1,2 @@
+# IMPORTANT: Don't commit your credentials -> comment in following line:
+# config.s3.tfbackend

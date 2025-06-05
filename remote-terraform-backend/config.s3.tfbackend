@@ -1,0 +1,12 @@
+
+### IMPORTANT ###
+### This is an example, please don't commit your credentials. Add this file to .gitignore ####
+
+
+# Replace keys and bucket name here and rename this file to config.s3.tfbackend
+secret_key = "W3CckZovXZtKBhLR2QQRYGoP13qvPi7JA2qRNXZI"
+access_key = "47U8GTNAW6IYYUE9N6YA"
+bucket = "tfstate-bucket-a2xt"
+
+# The key can be left as it is, but can also be customized as desired (before the terraform init)
+key = "myProjectInfra.tfstate"
