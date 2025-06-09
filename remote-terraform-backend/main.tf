@@ -30,4 +30,16 @@ terraform {
   }
 }
 
+# example only: volume is just to show that something is in terraform state
+resource "stackit_volume" "my_server_volume" {
+  project_id        = var.project_id
+  name              = "my-server-volume"
+  availability_zone = "eu01-1"
+  size              = 5
+  source = {
+    id   = "3fafe17d-173d-48b2-9961-308246069b16"
+    type = "image"
+  }
+}
+
 

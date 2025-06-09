@@ -4,9 +4,9 @@
 
 
 # Replace access_key, secret_key and bucket name here and rename this file to config.s3.tfbackend
-access_key = "47U8GTNAW6IYYUE9N6YA"
-secret_key = "W3CckZovXZtKBhLR2QQRYGoP13qvPi7JA2qRNXZI"
-bucket = "tfstate-bucket-a2xt"
+access_key = "CV5RJT7Z9C735WGI4C38"
+secret_key = "E9dJKr0DLVExm+6qZiCNdyY1i27/dKgAh81hBua9"
+bucket = "tfstate-bucket-a2xz"
 
 # The key can be left as it is, but can also be customized as desired (before the terraform init)
 key = "myProjectInfra.tfstate"
