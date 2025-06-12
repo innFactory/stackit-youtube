@@ -4,6 +4,9 @@ Profitieren Sie von unserer Expertise in der Implementierung modernster KI- und 
 
 ---
 
+## /remote-terraform-backend
+[![IMAGE ALT TEXT HERE](https://img.youtube.com/vi/R0A6dn7RaO0/0.jpg)](https://www.youtube.com/watch?v=R0A6dn7RaO0)
+
 ## /redis-coffee-cache
 [![IMAGE ALT TEXT HERE](https://img.youtube.com/vi/gUNBYjnrdgE/0.jpg)](https://www.youtube.com/watch?v=gUNBYjnrdgE)
 
