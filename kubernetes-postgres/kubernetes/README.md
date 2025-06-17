@@ -12,7 +12,7 @@ Follow the instructions in ../terraform before continue here
 `kubectl config use-context my-ske`
 
 ## Secret for Container Registry
-Create Robo-Account `https://registry.onstackit.cloud` in `kubernetes-playground` with `pull` rights and create secret:
+Create Robot-Account `https://registry.onstackit.cloud` in `kubernetes-playground` with `pull` rights and create secret:
 !Important Escape $ in docker-username
 `kubectl create secret docker-registry stackit-container-reg-secret --docker-server=registry.onstackit.cloud --docker-username=robot\$kubernetes-playground+pull-push --docker-password=tbFWNKANoP1CbiV2BMcA72cLPo35ue8o`
 
@@ -24,8 +24,7 @@ helm upgrade \
   --install \
   --namespace ingress-nginx \
   --create-namespace \
-  --version 4.12.1 \
-  --values helm/ingress-nginx/values.yaml
+  --version 4.12.1
 ```
 
 `kubectl apply -f k8s-deployment.yml`

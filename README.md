@@ -4,29 +4,32 @@ Profitieren Sie von unserer Expertise in der Implementierung modernster KI- und 
 
 ---
 
+## /kubernetes-postgres
+[![Thumbnail](https://img.youtube.com/vi/CN_8Uezc3FY/0.jpg)](https://www.youtube.com/watch?v=CN_8Uezc3FY)
+
 ## /remote-terraform-backend
-[![IMAGE ALT TEXT HERE](https://img.youtube.com/vi/R0A6dn7RaO0/0.jpg)](https://www.youtube.com/watch?v=R0A6dn7RaO0)
+[![Thumbnail](https://img.youtube.com/vi/R0A6dn7RaO0/0.jpg)](https://www.youtube.com/watch?v=R0A6dn7RaO0)
 
 ## /redis-coffee-cache
-[![IMAGE ALT TEXT HERE](https://img.youtube.com/vi/gUNBYjnrdgE/0.jpg)](https://www.youtube.com/watch?v=gUNBYjnrdgE)
+[![Thumbnail](https://img.youtube.com/vi/gUNBYjnrdgE/0.jpg)](https://www.youtube.com/watch?v=gUNBYjnrdgE)
 
 
 ## /python-coffee-service
-[![IMAGE ALT TEXT HERE](https://img.youtube.com/vi/kX37U_iPnqI/0.jpg)](https://www.youtube.com/watch?v=kX37U_iPnqI)
+[![Thumbnail](https://img.youtube.com/vi/kX37U_iPnqI/0.jpg)](https://www.youtube.com/watch?v=kX37U_iPnqI)
 
 
 ## /vm-ssh
-[![IMAGE ALT TEXT HERE](https://img.youtube.com/vi/NBooahG4U6w/0.jpg)](https://www.youtube.com/watch?v=NBooahG4U6w)
+[![Thumbnail](https://img.youtube.com/vi/NBooahG4U6w/0.jpg)](https://www.youtube.com/watch?v=NBooahG4U6w)
 
 
 ## /cloud-foundry-nextjs
-[![IMAGE ALT TEXT HERE](https://img.youtube.com/vi/wXLe5VQTfng/0.jpg)](https://www.youtube.com/watch?v=wXLe5VQTfng)
+[![Thumbnail](https://img.youtube.com/vi/wXLe5VQTfng/0.jpg)](https://www.youtube.com/watch?v=wXLe5VQTfng)
 
 ## /s3-aws-provider
-[![IMAGE ALT TEXT HERE](https://img.youtube.com/vi/eEss4VFDBfw/0.jpg)](https://www.youtube.com/watch?v=eEss4VFDBfw)
+[![Thumbnail](https://img.youtube.com/vi/eEss4VFDBfw/0.jpg)](https://www.youtube.com/watch?v=eEss4VFDBfw)
 
 ## /create-project
-[![IMAGE ALT TEXT HERE](https://img.youtube.com/vi/2W6JE8BVTBk/0.jpg)](https://www.youtube.com/watch?v=2W6JE8BVTBk)
+[![Thumbnail](https://img.youtube.com/vi/2W6JE8BVTBk/0.jpg)](https://www.youtube.com/watch?v=2W6JE8BVTBk)
 
 --- 
 
