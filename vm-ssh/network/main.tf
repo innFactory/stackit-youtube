@@ -30,7 +30,7 @@ resource "stackit_security_group_rule" "security_group_rule" {
 resource "stackit_network" "network" {
   project_id         = var.project_id
   name               = "example-network"
-  ipv4_nameservers   = ["192.0.2.0", "198.51.100.0", "203.0.113.0"]
+  ipv4_nameservers   = ["1.1.1.1", "8.8.8.8", "6.6.6.6"]
   ipv4_prefix_length = 24
 }
 
