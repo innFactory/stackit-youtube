@@ -4,6 +4,9 @@ Profitieren Sie von unserer Expertise in der Implementierung modernster KI- und 
 
 ---
 
+## /sna-public-db
+[![Thumbnail](https://img.youtube.com/vi/fsxA7b1WTRE/0.jpg)](https://www.youtube.com/watch?v=fsxA7b1WTRE)
+
 ## /kubernetes-postgres
 [![Thumbnail](https://img.youtube.com/vi/CN_8Uezc3FY/0.jpg)](https://www.youtube.com/watch?v=CN_8Uezc3FY)
 
