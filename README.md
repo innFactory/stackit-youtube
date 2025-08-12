@@ -4,6 +4,9 @@ Profitieren Sie von unserer Expertise in der Implementierung modernster KI- und 
 
 ---
 
+## /manipulate-db-instance
+[![Thumbnail](https://img.youtube.com/vi/H-DuuSHIA3k/0.jpg)](https://www.youtube.com/watch?v=H-DuuSHIA3k)
+
 ## /sna-public-db
 [![Thumbnail](https://img.youtube.com/vi/fsxA7b1WTRE/0.jpg)](https://www.youtube.com/watch?v=fsxA7b1WTRE)
 
