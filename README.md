@@ -4,6 +4,10 @@ Profitieren Sie von unserer Expertise in der Implementierung modernster KI- und 
 
 ---
 
+## /sso-entra
+[![Thumbnail](https://img.youtube.com/vi/acoHrQZB6OI/0.jpg)](https://www.youtube.com/watch?v=7BLM7pI8UWo)
+
+
 ## /terraform-import
 [![Thumbnail](https://img.youtube.com/vi/7BLM7pI8UWo/0.jpg)](https://www.youtube.com/watch?v=7BLM7pI8UWo)
 
