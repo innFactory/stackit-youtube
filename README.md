@@ -4,8 +4,11 @@ Profitieren Sie von unserer Expertise in der Implementierung modernster KI- und 
 
 ---
 
+## /rabbitmq-mqtt
+[![Thumbnail](https://img.youtube.com/vi/WLQ0WPePLME/0.jpg)](https://www.youtube.com/watch?v=WLQ0WPePLME)
+
 ## /sso-entra
-[![Thumbnail](https://img.youtube.com/vi/acoHrQZB6OI/0.jpg)](https://www.youtube.com/watch?v=7BLM7pI8UWo)
+[![Thumbnail](https://img.youtube.com/vi/acoHrQZB6OI/0.jpg)](https://www.youtube.com/watch?v=acoHrQZB6OI)
 
 
 ## /terraform-import
