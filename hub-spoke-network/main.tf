@@ -18,7 +18,6 @@ resource "stackit_network_area" "sna" {
   name            = "sna"
 }
 
-# Add the new resource "stackit_network_area_region" and configure it with all the deprecated values from the "stackit_network_area" resource
 resource "stackit_network_area_region" "sna_region" {
   organization_id = var.organization_id
   network_area_id = stackit_network_area.sna.network_area_id
@@ -37,55 +36,18 @@ resource "stackit_network_area_region" "sna_region" {
   }
 }
 
+module "projects" {
+  source = "./modules/projects"
 
-resource "stackit_resourcemanager_project" "hub" {
-  parent_container_id = var.organization_id
-  name                = "hub"
-  labels = {
-    "networkArea" = stackit_network_area.sna.network_area_id
-  }
-  owner_email = var.service_account_email
+  organization_id = var.organization_id
+  network_area_id = stackit_network_area.sna.network_area_id
+  owner_email     = var.service_account_email
 }
 
+module "networks" {
+  source = "./modules/network"
 
-resource "stackit_resourcemanager_project" "project1" {
-  parent_container_id = var.organization_id
-  name                = "project1"
-  labels = {
-    "networkArea" = stackit_network_area.sna.network_area_id
-  }
-  owner_email = var.service_account_email
-}
-
-resource "stackit_resourcemanager_project" "project2" {
-  parent_container_id = var.organization_id
-  name                = "project2"
-  labels = {
-    "networkArea" = stackit_network_area.sna.network_area_id
-  }
-  owner_email = var.service_account_email
-}
-
-resource "stackit_network" "hub_network" {
-  project_id       = stackit_resourcemanager_project.hub.project_id
-  name             = "hub_network"
-  ipv4_prefix      = "10.42.0.0/24"
-  ipv4_nameservers = []
-  routed           = true
-}
-
-resource "stackit_network" "p1_network" {
-  project_id       = stackit_resourcemanager_project.project1.project_id
-  name             = "project1_network"
-  ipv4_prefix      = "10.42.1.0/24"
-  ipv4_nameservers = []
-  routed           = true
-}
-
-resource "stackit_network" "p2_network" {
-  project_id       = stackit_resourcemanager_project.project2.project_id
-  name             = "project2_network"
-  ipv4_prefix      = "10.42.2.0/24"
-  ipv4_nameservers = []
-  routed           = true
+  hub_project_id = module.projects.hub_project_id
+  project1_id    = module.projects.project1_id
+  project2_id    = module.projects.project2_id
 }
