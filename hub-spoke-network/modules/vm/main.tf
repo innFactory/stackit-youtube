@@ -64,7 +64,7 @@ resource "stackit_security_group_rule" "project1_ssh" {
   security_group_id = stackit_security_group.project1.security_group_id
   direction         = "ingress"
   ether_type        = "IPv4"
-  ip_range          = "10.42.0.0/16"
+  ip_range          = "10.42.0.0/24"
   protocol = {
     name = "tcp"
   }
@@ -87,7 +87,7 @@ resource "stackit_security_group_rule" "project2_ssh" {
   security_group_id = stackit_security_group.project2.security_group_id
   direction         = "ingress"
   ether_type        = "IPv4"
-  ip_range          = "10.42.0.0/16"
+  ip_range          = "10.42.0.0/24"
   protocol = {
     name = "tcp"
   }
