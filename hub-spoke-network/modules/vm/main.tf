@@ -15,21 +15,9 @@ resource "tls_private_key" "ssh" {
   rsa_bits  = 4096
 }
 
-# Key pair for hub
-resource "stackit_key_pair" "hub" {
-  name       = "hub-keypair"
-  public_key = tls_private_key.ssh.public_key_openssh
-}
-
-# Key pair for project1
-resource "stackit_key_pair" "project1" {
-  name       = "vm1-keypair"
-  public_key = tls_private_key.ssh.public_key_openssh
-}
-
-# Key pair for project2
-resource "stackit_key_pair" "project2" {
-  name       = "vm2-keypair"
+# Key pair for all vms (please use in prod env one key for each vm)
+resource "stackit_key_pair" "general" {
+  name       = "general-keypair"
   public_key = tls_private_key.ssh.public_key_openssh
 }
 
@@ -55,13 +43,6 @@ resource "stackit_security_group_rule" "hub_ssh" {
   }
 }
 
-# Allow all egress from hub VM
-resource "stackit_security_group_rule" "hub_egress" {
-  project_id        = var.hub_project_id
-  security_group_id = stackit_security_group.hub.security_group_id
-  direction         = "egress"
-  ether_type        = "IPv4"
-}
 
 # Network interface for hub VM
 resource "stackit_network_interface" "hub" {
@@ -172,7 +153,7 @@ resource "stackit_server" "hub" {
   name              = "vm-hub"
   availability_zone = "eu01-1"
   machine_type      = "t2i.1"
-  keypair_name      = stackit_key_pair.hub.name
+  keypair_name      = stackit_key_pair.general.name
   boot_volume = {
     source_type = "volume"
     source_id   = stackit_volume.hub.volume_id
@@ -194,7 +175,7 @@ resource "stackit_server" "project1" {
   name              = "vm-project1"
   availability_zone = "eu01-1"
   machine_type      = "t2i.1"
-  keypair_name      = stackit_key_pair.project1.name
+  keypair_name      = stackit_key_pair.general.name
   boot_volume = {
     source_type = "volume"
     source_id   = stackit_volume.project1.volume_id
@@ -210,7 +191,7 @@ resource "stackit_server" "project2" {
   name              = "vm-project2"
   availability_zone = "eu01-1"
   machine_type      = "t2i.1"
-  keypair_name      = stackit_key_pair.project2.name
+  keypair_name      = stackit_key_pair.general.name
   boot_volume = {
     source_type = "volume"
     source_id   = stackit_volume.project2.volume_id
