@@ -59,8 +59,10 @@ module "networks" {
 module "vms" {
   source = "./modules/vm"
 
-  project1_id   = module.projects.project1_id
-  project2_id   = module.projects.project2_id
-  p1_network_id = module.networks.p1_network_id
-  p2_network_id = module.networks.p2_network_id
+  hub_project_id = module.projects.hub_project_id
+  hub_network_id = module.networks.hub_network_id
+  project1_id    = module.projects.project1_id
+  project2_id    = module.projects.project2_id
+  p1_network_id  = module.networks.p1_network_id
+  p2_network_id  = module.networks.p2_network_id
 }
