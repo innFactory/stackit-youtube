@@ -15,7 +15,7 @@ output "hub_server_id" {
 }
 
 output "hub_public_ip" {
-  description = "The hub VM public IP (bastion)"
+  description = "The hub VM public IP"
   value       = stackit_public_ip.hub.ip
 }
 
