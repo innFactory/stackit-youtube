@@ -4,6 +4,9 @@ Profitieren Sie von unserer Expertise in der Implementierung modernster KI- und 
 
 ---
 
+## /hub-spoke-network
+[![Thumbnail](https://img.youtube.com/vi/pSy4SdXu-ZI/0.jpg)](https://www.youtube.com/watch?v=pSy4SdXu-ZI)
+
 ## /rabbitmq-mqtt
 [![Thumbnail](https://img.youtube.com/vi/WLQ0WPePLME/0.jpg)](https://www.youtube.com/watch?v=WLQ0WPePLME)
 
